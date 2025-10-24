@@ -10,4 +10,7 @@ jobs:
     steps:
       - name: print a welcome message
         run: echo "welcome"
-      
+      - name: Checckout repository
+        uses: actions/checkout@v5.0.0
+      - name: list repo
+        run: ls -la
